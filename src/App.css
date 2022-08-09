@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #b5f5fa; */
+  /* min-height: 100vh; */
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  /* align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white; */
+  
+    /* font-size:30px;
+    color:#000;
+    border-bottom: 1px solid #ccc;
+    padding-bottom:5px; */
+}
+
+
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* I added CSS from here */
+/* h1 {
+  font-size: 45px;
+  position: absolute;
+  left: 105px;
+  color: rgb(7, 6, 6);
+  font-family: Cursive;
+} */
+h1 {
+  font-size: 30px;
+  color: #000;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 5px;
+  font-family: Cursive;
+}
+
+h1::after {
+  content: "";
+  display: block;
+  border-bottom: 2px solid orange;
+  width: 45%;
+  position: relative;
+  bottom: -6px; /* your padding + border-width */
+}
+
+footer {
+  margin-top: 40%;
+}
+
+UserForm {
+  margin-top: 100px;
+}
+
+.quote {
+  margin-left: 80px;
+  margin-top: 230px;
+  font-size: 60px;
+  text-indent: 50px;
+  text-align: justify;
+  letter-spacing: 3px;
+}
