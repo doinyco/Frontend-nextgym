@@ -13,10 +13,13 @@ const Logout = (props) => {
         props.setUserLoggedIn(false);
     }
 
-    return <div className="logout">
-        <p>Welcome {getGlobalUsername().username}</p><button onClick={logout}>Logout</button>
-    </div>
-}
+    return (
+        <div className="logout">
+            <p>Welcome {getGlobalUsername().username}</p>
+            <button onClick={logout}>Logout</button>
+        </div>
+    );
+};
 
 Logout.propTypes = {
     setUserLoggedIn:PropTypes.func.isRequired,

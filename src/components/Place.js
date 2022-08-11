@@ -32,16 +32,19 @@ const Place = (props) => {
     };
 
     return (
+        
         <div className="List-info">
+            {/* <li className="collection-item"><div>{props.name}</div><a href="#!" className="secondary-content"><i class="material-icons"><button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button></i></a></li> */}
             <h3>
                 {props.name}
                 {/* <button onClick={deletePlaceCb}>Remove</button> */}
             </h3>
-            <button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button>
+            <button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button> 
             {/* <p>{props.lat} {props.lon}</p> */}
             {/* <p>{props.place_id} {props.maps_place_id}</p> */}
             {/* <button>Remove</button> */}
         </div>
+    
     );
 };
 

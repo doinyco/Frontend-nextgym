@@ -18,7 +18,7 @@ const Map = () => {
   const [ markers, setMarkers ] = useState([])
 
   const mapStyles = {
-    height: "50vh",
+    height: "40%",
     width: "40%"
   };
   
@@ -54,9 +54,8 @@ const Map = () => {
           map: GlobalMapInstance,
       });
 
-      // marker.setAnimation(GlobalMapsInstance.Animation.BOUNCE);
-
       marker.maps_place_id = result.place_id
+      marker.result = result
       marker.favorite_place = null;
       marker.infoWindow = null;
       marker.infoWindowVisible = false;
@@ -80,7 +79,12 @@ const Map = () => {
             marker.infoWindowVisible = false;
           });
 
-          marker.infoWindow.setContent('<button id="' + marker.maps_place_id + '"</button>');
+          console.log("marker.result", marker.result)
+          console.log("url", marker.result.photos[0].getUrl())
+          const description = "<p>" + marker.result.name + "</p>" +
+          "<p>" + "Rating: " + marker.result.rating + "</p>" + 
+          "<img src=" + marker.result.photos[0].getUrl() + ">"
+          marker.infoWindow.setContent(description + '<button id="' + marker.maps_place_id + '"</button>');
         }
 
         if (marker.infoWindowVisible) {
@@ -134,36 +138,50 @@ const Map = () => {
   return (
     <div className='map'>
       <header>
-        <h1>My Map</h1>
+        <h2>My Map</h2>
       </header>
       <main>
-      <div className="search-menu"><SearchMenu mapCb={mapCb}/></div>
-      <div style={{ height: '70vh', width: '60%' }}> 
-          {/* <SearchMenu mapCb={mapCb}/> */}
-          <GoogleMapReact
-          bootstrapURLKeys={{
-            key: process.env.REACT_APP_GOOGLE_MAPS_KEY,
-            libraries:['places'],
-          }}
-            mapContainerStyle={mapStyles}
-            defaultZoom={12}
-            defaultCenter={defaultCenter}
-            onGoogleApiLoaded={({ map, maps }) => {
-              GlobalMapInstance = map;
-              GlobalMapsInstance = maps;
-            }}
-            yesIWantToUseGoogleMapApiInternals>
-            </GoogleMapReact>
-          <div>
-            <Link to="/"> 
-                <div id="home">🏠</div>
-            </Link>
-            <Link to="/users">
-              <div id="go-to-user">👤</div>
-            </Link>
-          </div>
-      </div>
+        <div className="search-menu"><SearchMenu mapCb={mapCb}/></div>
+        <div className="my-map">
+          <div style={{ height: '60vh', width: '60%' }}> 
+              {/* <SearchMenu mapCb={mapCb}/> */}
+              <GoogleMapReact
+              bootstrapURLKeys={{
+                key: process.env.REACT_APP_GOOGLE_MAPS_KEY,
+                libraries:['places'],
+              }}
+                mapContainerStyle={mapStyles}
+                defaultZoom={12}
+                defaultCenter={defaultCenter}
+                onGoogleApiLoaded={({ map, maps }) => {
+                  GlobalMapInstance = map;
+                  GlobalMapsInstance = maps;
+                }}
+                yesIWantToUseGoogleMapApiInternals>
+                </GoogleMapReact>
+                <nav>
+                  <ul className="nav">
+                      <li>
+                          <Link to="/user">
+                              <div id="go-to-user">Profile</div>
+                          </Link>
+                      </li>
+                      <li>
+                        <Link to="/"> 
+                          <div id="home">home</div>
+                        </Link>
+                      </li>
+                      {/* <li>
+                          <Link to="/map">
+                              <div id="go-to-map">Map</div>
+                          </Link>
+                      </li> */}
+                  </ul>
+              </nav>  
+            </div>
+        </div>
       </main>
+      <footer/>
     </div>
   )
 };

@@ -1,4 +1,6 @@
-.App {
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+
+/* .App {
   text-align: center;
 }
 
@@ -11,39 +13,28 @@
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
-  /* background-color: #b5f5fa; */
-  /* min-height: 100vh; */
+/* .App-header { 
+  
+  min-height: 100vh; 
   height: 100px;
   display: flex;
-  flex-direction: column;
-  /* align-items: center;
+  flex-direction: column; 
+  align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white; */
+  color: white; 
   
-    /* font-size:30px;
-    color:#000;
-    border-bottom: 1px solid #ccc;
-    padding-bottom:5px; */
-}
+  font-size:30px;
+  
+  border-bottom: 1px solid #ccc;
+} */
 
 
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
 /* I added CSS from here */
 /* h1 {
   font-size: 45px;
@@ -52,36 +43,76 @@
   color: rgb(7, 6, 6);
   font-family: Cursive;
 } */
-h1 {
-  font-size: 30px;
-  color: #000;
-  border-bottom: 2px solid #ccc;
-  padding-bottom: 5px;
-  font-family: Cursive;
+
+.App {
+  min-height: 100%;
+  display: flexbox;
+  /* flex-flow: column wrap; */
+  /* justify-content: flex-start; */
 }
 
-h1::after {
-  content: "";
+
+h1 {
+  font-size: 70px;
+  /* border-bottom: 2px solid #ccc; */
+  /* padding-bottom: 4px; */
+  border-bottom: 1px solid 	#FFD700;
+  margin-left: 15%;
+  margin-right: 65%;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+/* .App-header { */
+  /* content: "";
   display: block;
   border-bottom: 2px solid orange;
   width: 45%;
   position: relative;
-  bottom: -6px; /* your padding + border-width */
-}
+  bottom: -7px;  */
+/* 
+  display:block;
+    border:none;
+    color:rgb(3, 3, 3);
+    height:1.5px;
+    
+    background:black;
+    background: -webkit-gradient(radial, 1% 1%, 0, 50% 50%, 350, from(#000), to(#fff));
+} */
+
+/* main {
+  display: flexbox;
+  flex-flow: column wrap;
+} */
+
 
 footer {
-  margin-top: 40%;
+  margin-top: 20%;
+  /* text-align: center; */
+  display: inline-block;
 }
 
-UserForm {
+/* UserForm {
   margin-top: 100px;
-}
+} */
 
-.quote {
+p {
   margin-left: 80px;
-  margin-top: 230px;
+  /* margin-bottom: 30px; */
+  /* margin-top: 230px; */
   font-size: 60px;
   text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
+  float: left;
+  /* text-align: justify; */
+  /* letter-spacing: 3px; */
+  margin-bottom: 100px;
+}
+
+ .authentication {
+  /* margin-top: 5%; */
+  margin-left: 70%;
+  float: right;
 }

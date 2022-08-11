@@ -1,6 +1,5 @@
 import * as React from 'react';
 import PropTypes from "prop-types";
-
 import { GlobalMapInstance, GlobalMapsInstance } from './Map'
 
 const google = window.google;
@@ -47,6 +46,8 @@ const SearchMenu = (props) => {
         search(event.target.value, props.mapCb)
     };
 
+    
+
     return (
         <div>
           <label>
@@ -58,6 +59,16 @@ const SearchMenu = (props) => {
             </select>
           </label>
         </div>
+        // <div className="input-field">
+        //   <select onChange={handleChange}>
+        //   {options.map((option) => (
+        //     <option value={option.value}>{option.label}</option>
+        //   ))}
+
+        //   </select>
+        //   <label>Materialize Select</label>
+        // </div>
+        
       );
 };
 

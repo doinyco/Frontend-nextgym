@@ -6,6 +6,8 @@ import UserForm from "./UserForm";
 import { getGlobalUsername } from "..";
 import { getSavedPlaces } from "../backendAPI";
 import PlaceList from "./PlaceList";
+// import "materialize-css/dist/css/materialize.min.css";
+// import $ from "jquery";
 
 const User = () => {
     const [places, setPlaces] = useState({"done": false, "places": []})
@@ -34,29 +36,33 @@ const User = () => {
     console.log("asde")
 
     return (
-        <div className="user">
+        <div className="ur">
             <header>
-                <h2>Welcome {getGlobalUsername().username}</h2>
+                <h2>My Profile</h2>
+                {/* <h2>Welcome {getGlobalUsername().username}</h2> */}
             </header>
-            <main>
-
+            <div className="user-main">
                 <img src={profile}></img>
                 <br/>
-            <button onClick={showHidePlacelist}>List of Favourite Places</button>
-            {
-                placesListShowing ? <PlaceList placeData={places.places}/> : null
-            }
-            </main>
-            <section className="nav">
-                <Link to="/">
-                    <div id="home">🏠</div>
-                </Link>
-                <br/>
-                
-                <Link to="/map">
-                    <div id="go-to-map">🗺</div>
-                </Link>
-            </section>
+                <h3>{getGlobalUsername().username}</h3>
+                <button onClick={showHidePlacelist}>
+                    <div className="saved">
+                        Saved Places
+                    </div>
+                    { placesListShowing ? <PlaceList placeData={places.places}/> : null }
+                </button>
+                {/* { placesListShowing ? <PlaceList placeData={places.places}/> : null } */}
+            </div>
+            <div className="user-nav">
+                    <Link to="/">
+                        <div id="main">🏠</div>
+                    </Link>
+                    <br/>
+                    <Link to="/map">
+                        <div id="go-to-map">🗺</div>
+                    </Link>
+                </div>
+            {/* <footer/> */}
         </div>
     );
 };

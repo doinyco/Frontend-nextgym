@@ -1,34 +1,48 @@
-/* .user {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-} */
-
-
-/* .nav {
-    
-    color: black;
-   
-    
-} */
-
 img {
     height: 80px;
     width: 80px;
     background-image: none;
+    margin-top: 30px;
+    margin-left: 45%;
+}
+
+h3 {
+    margin-left: 45%;
 }
 
 
-.nav {
+.user-nav {
     font-size: 25px;
-    display: "inline-block";
+    /* display: "inline-block";
     list-style-type: none;
     text-align: center;
     margin: 0;
-    padding: 0;
+    padding: 0; */
 }
 
 h2 {
-    font-size: 40px;
+    font-size: 50px;
+    /* align-items: center;
+    display: flex; */
+}
+
+.ur {
+    display: flexbox;
+    /* justify-content: center; */
+}
+
+/* .user-main {
+    justify-content: center;
+    margin-top: 300px;
+} */
+
+button {
+    padding: 0;
+    border: none;
+    background: none;
+}
+
+.user-main {
+    justify-content: center;
 }
 

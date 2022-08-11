@@ -1,0 +1,13 @@
+.signup-button > input {
+    background-color: #B9F4EE;
+    width: 100px;
+    height: 30px;
+    color: white;
+    font-size: 20px;
+    justify-content: center;
+    font-weight: bold;
+}
+
+/* h3 {
+    color: #FDB0A7;
+} */

@@ -13,11 +13,15 @@ const Auth = () => {
 
     console.log(userLoggedIn)
 
+    
+
     if (userLoggedIn) {
         return <Logout setUserLoggedIn={setUserLoggedIn}/>
     }
 
-    return <Login setUserLoggedIn={setUserLoggedIn}/>
+    return <Login setUserLoggedIn={setUserLoggedIn}
+        
+    />
 }
 
 export default Auth;

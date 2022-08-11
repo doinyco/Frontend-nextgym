@@ -1,4 +1,4 @@
-button {
+/* button {
     background: none;
     color: inherit;
     border: none;
@@ -6,4 +6,69 @@ button {
     font: inherit;
     cursor: pointer;
     outline: inherit;
-  }
+  } */
+
+
+.login {
+  display: flexbox;
+  width: 300px;
+  height: 300px;
+  /* border: 2px solid rgb(242, 229, 109); */
+  padding: 40px;
+  margin: 20px;
+  /* background-color: rgb(250, 250, 250); */
+  -moz-box-shadow: 3px 3px 3px #ccc;
+  -webkit-box-shadow: 3px 3px 3px #ccc;
+  box-shadow: 3px 3px 3px #ccc;
+  /* box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);  */
+  /* box-shadow: 0px 5px 10px 0px#FFD700; */
+  border-radius: 10px;
+  /* justify-content: center; */
+}
+  
+
+/* .log {
+  float: left;
+  justify-content: center;
+}
+
+.sign-up {
+  float: right;
+} */
+
+input {
+  background-color: #FFF6E5;
+  /* outline: none; */
+  border: none;
+  border-radius: 5px;
+  height: 30px;
+  /* text-align: center; */
+}
+
+
+.log-button > input {
+  background-color: #FDB0A7;
+  width: 100px;
+  height: 30px;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  font-weight: bold;
+
+}
+
+/* .sign-up > UserForm {
+  background-color: #B9F4EE;
+} */
+
+.log > h3 {
+  color: #B9F4EE;
+  font-size: 25px;
+  text-align: center;
+}
+
+.sign-up > h3 {
+  color: #FDB0A7;
+  font-size: 25px;
+  text-align: center;
+}

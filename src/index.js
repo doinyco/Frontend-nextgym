@@ -6,7 +6,10 @@ import reportWebVitals from './reportWebVitals';
 import User from "./components/User.js";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Map from "./components/Map.js";
-import CreateProfile from "./components/CreateProfile.js";
+import SignUp from "./components/SignUp";
+import HomePage from "./components/HomePage.js";
+// import "materialize-css/dist/css/materialize.min.css";
+// import $ from "jquery";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
@@ -28,10 +31,11 @@ root.render(
   // </React.StrictMode>
   <BrowserRouter>
     <Routes>
-      <Route path="users" element={<User />} />
+      <Route path="user" element={<User />} />
       <Route path="/" element={<App />} />
       <Route path="map" element={<Map />} />
-      <Route path="create-profile" element={<CreateProfile />} />
+      <Route path="signup" element={<SignUp />} />
+      <Route path="home" element={<HomePage />} />
     </Routes>
   </BrowserRouter>
 );
