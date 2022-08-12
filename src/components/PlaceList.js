@@ -12,10 +12,11 @@ const PlaceList = (props) => {
 
     
     return (
-        <div>
-            <ul className="collection">
+        <div className="collection">
+            {Favourites}
+            {/* <ul className="collection">
                 {Favourites}
-            </ul>
+            </ul> */}
             {/* {
                 props.placeData.map((place) => {
                     console.log("Will render", props.placeData.length, "places");

@@ -162,7 +162,7 @@ const Map = () => {
                 <nav>
                   <ul className="nav">
                       <li>
-                          <Link to="/user">
+                          <Link to="/profile">
                               <div id="go-to-user">Profile</div>
                           </Link>
                       </li>

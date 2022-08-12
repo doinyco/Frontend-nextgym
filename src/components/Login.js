@@ -48,7 +48,7 @@ const Login = (props) => {
         console.log(username, password)
         authenticateUser(username, password, () => {
             props.setUserLoggedIn();
-            navigate(`/user`);
+            navigate(`/profile`);
         })
     };
 

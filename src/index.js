@@ -31,7 +31,7 @@ root.render(
   // </React.StrictMode>
   <BrowserRouter>
     <Routes>
-      <Route path="user" element={<User />} />
+      <Route path="profile" element={<User />} />
       <Route path="/" element={<App />} />
       <Route path="map" element={<Map />} />
       <Route path="signup" element={<SignUp />} />

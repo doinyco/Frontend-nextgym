@@ -8,3 +8,13 @@
 p {
     float: left;
 } */
+
+
+.logout > button {
+    /* font-size: 30px; */
+    color: white;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    margin-right: 20px;
+}

@@ -6,16 +6,17 @@ import UserForm from "./UserForm";
 import { getGlobalUsername } from "..";
 import { getSavedPlaces } from "../backendAPI";
 import PlaceList from "./PlaceList";
+import Logout from "./Logout"
+import Auth from "./Auth";
 // import "materialize-css/dist/css/materialize.min.css";
 // import $ from "jquery";
+import map from "../images/map.png";
+import blueuser from "../images/blueuser.png"
+import home2 from "../images/home2.png"
 
 const User = () => {
     const [places, setPlaces] = useState({"done": false, "places": []})
     const [placesListShowing, setPlacesListShowing] = useState(false)
-
-    // useEffect(() => {
-    //     getSavedPlaces(getGlobalUsername().user_id, cb, places)
-    // }, []);
 
     const cb = (new_places, context) => {
         console.log("cb")
@@ -33,33 +34,40 @@ const User = () => {
         // setPlacesListShowing(!placesListShowing)
     }
 
-    console.log("asde")
-
     return (
         <div className="ur">
+            <div className="logout"><Logout /></div>
+            
             <header>
                 <h2>My Profile</h2>
-                {/* <h2>Welcome {getGlobalUsername().username}</h2> */}
             </header>
             <div className="user-main">
-                <img src={profile}></img>
+                <img src={blueuser}></img>
                 <br/>
                 <h3>{getGlobalUsername().username}</h3>
-                <button onClick={showHidePlacelist}>
-                    <div className="saved">
+                <div className="saved">
+                    <button onClick={showHidePlacelist}>
+                        <h4>Saved Places</h4>
+                        { placesListShowing ? <PlaceList placeData={places.places}/> : null }
+                    </button>
+                    
+
+                </div>
+                {/* <button onClick={showHidePlacelist}> */}
+                    {/* <div className="saved">
                         Saved Places
-                    </div>
-                    { placesListShowing ? <PlaceList placeData={places.places}/> : null }
-                </button>
-                {/* { placesListShowing ? <PlaceList placeData={places.places}/> : null } */}
+                    </div> */}
+                    {/* <h4>Saved Places</h4> */}
+                    {/* { placesListShowing ? <PlaceList placeData={places.places}/> : null } */}
+                {/* </button> */}
             </div>
             <div className="user-nav">
                     <Link to="/">
-                        <div id="main">🏠</div>
+                        <img src={home2}></img>
                     </Link>
                     <br/>
                     <Link to="/map">
-                        <div id="go-to-map">🗺</div>
+                        <img src={map}></img>
                     </Link>
                 </div>
             {/* <footer/> */}

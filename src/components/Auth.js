@@ -11,17 +11,11 @@ const Auth = () => {
 
     const [userLoggedIn, setUserLoggedIn] = useState(getGlobalUsername().user_id !== -1)
 
-    console.log(userLoggedIn)
-
-    
-
-    if (userLoggedIn) {
-        return <Logout setUserLoggedIn={setUserLoggedIn}/>
+    if (getGlobalUsername().user_id !== -1) {
+        return null;
     }
 
-    return <Login setUserLoggedIn={setUserLoggedIn}
-        
-    />
+    return <Login setUserLoggedIn={setUserLoggedIn} />
 }
 
 export default Auth;

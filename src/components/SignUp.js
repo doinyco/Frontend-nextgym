@@ -1,9 +1,8 @@
 import "./SignUp.css";
 import React from "react";
 import { useNavigate } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import axios from "axios";
-import UserForm from "./UserForm";
 import md5 from "md5";
 
 import { setGlobalUsername } from "..";
@@ -38,8 +37,6 @@ const CreateProfile = () => {
         console.log(username, password)
 
         createUser();
-
-        //navigate(`/user`);
     };
 
     const createUser = async () => {
@@ -58,7 +55,7 @@ const CreateProfile = () => {
                 "last_name": response.data.last_name,
             })
 
-            navigate('/user')
+            navigate('/profile')
         } catch (err) {
             console.log("error", err)
         }
@@ -67,8 +64,8 @@ const CreateProfile = () => {
     return (
         <div>
             <form onSubmit={handleFormSubmissionn}>
-                <div class="center">
-                    <div class="vertical-center">
+                <div className="center">
+                    <div className="vertical-center">
                         <div>
                             <input
                                 name="username"

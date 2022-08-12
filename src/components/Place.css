@@ -10,3 +10,24 @@
 /* button {
     float: right;
 } */
+
+h5 {
+    font-size: 20px;
+    font-weight: normal;
+    position: relative;
+    /* border-style: ridge; */
+    /* line-height: 20%;    */
+}
+h5 > button {
+    margin-left: 40px;
+}
+
+.List-info {
+    /* background-color: #FBFBFB; */
+    background-color: white;
+    border-radius: 30px;
+    letter-spacing: 4px;
+    /* line-height: -1; */
+
+}
+
