@@ -1,16 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
 
-/* button {
-    background: none;
-    color: inherit;
-    border: none;
-    padding: 10px;
-    font: inherit;
-    cursor: pointer;
-    outline: inherit;
-  } */
-
-
 .login {
   /* display: flexbox; */
   width: 350px;
@@ -28,16 +17,6 @@
   border-radius: 15px;
 }
 
-  
-
-/* .log {
-  float: left;
-  justify-content: center;
-}
-
-/* .sign-up {
-  float: right;
-} */ 
 
 .log > input {
   background-color: #f8f8ff;
@@ -55,7 +34,10 @@
   font-size: 15px;
   font-style: oblique;
   /* font-family: 'Sacramento', cursive; */
-  margin-left: 8px;
+  /* margin-left: 50px; */
+  margin: 7px;
+  /* padding: 10px; */
+
 
   /* text-align: center; */
 }
@@ -130,7 +112,7 @@ form {
     border: 2px solid #dcd0ff;
     font-family:'Montserrat', sans-serif;
     text-transform: uppercase;
-    text-align: center;
+    /* text-align: center; */
     line-height: 0.5;
     font-size: 18px;
     background-color : transparent;
@@ -139,6 +121,7 @@ form {
     border-radius: 10px;
     font-weight: bold;
     width: 120px;
+    margin: 15px;
 }
 
 .log-button > input:hover {
@@ -147,6 +130,6 @@ form {
 }
 
 .log-button {
-  margin-left: 79px;
+  margin-left: 55px;
 }
 

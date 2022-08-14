@@ -68,28 +68,21 @@ const Login = (props) => {
                             name="username"
                             type="text"
                             // placeholder= <img src={log1}></img>
-                            placeholder="User name"
+                            placeholder=" User name"
                             value={username}
                             onChange={handleFormInput}
                         />
-                        <br/>
-                        <br/>
                         <input
                             name="password"
                             type="password"
-                            placeholder="Password"
+                            placeholder=" Password"
                             value={password}
                             onChange={handlePasswordInput}
                         />
-                        <br/>
-                        <br/>
-                        {/* <br/> */}
                         <div className="log-button">
                             <input type="submit" value="Log In" />
                         </div>   
                     </div>
-                    <br/>
-                    {/* <br/> */}
             </form>
             <div className="signup">
                 <h4>

@@ -42,16 +42,14 @@ const User = () => {
                 <img src={blueuser}></img>
             </div>
             <div className="user-main">
-                <div className="saved">
                     <button onClick={showHidePlacelist}>
                         <h4>Saved Places</h4>
                         { placesListShowing ? <PlaceList placeData={places.places}/> : null }
                     </button>   
-                </div>
             </div>
+            {/* <br/>
             <br/>
-            <br/>
-            <br/>
+            <br/> */}
             <div className="user-nav">
                     <Link to="/map">
                         <img src={m2}></img>

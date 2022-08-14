@@ -43,10 +43,6 @@ header > h2 {
     display: flex;
 }
 
-/* .user-icon  > h3 {
-    padding: 1px;
-} */
-
 .user-main  {
     /* display: flexbox;
     right: 50%; */
@@ -66,10 +62,6 @@ header > h2 {
 
 }
 
-/* .user-main {
-    justify-content: center;
-    margin-top: 300px;
-} */
 
 button {
     padding: 0;
@@ -82,26 +74,6 @@ button {
      
 }
 
-/* .user-main {
-    justify-content: center;
-} */
-
-
-.saved {
-    font-size: 30px;
-    /* position: fixed; */
-    top: 35%;
-    /* left: 45%; */   
-}
-
-/* h4:hover {
-    color: rgba(249, 36, 206, 0.582);
-} */
-h4 {
-    /* line-height: 10px;  */
-    padding: 10px; 
-    /* margin-bottom: 0.5px; */
-}
 
 button > h4:hover {
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
@@ -109,11 +81,6 @@ button > h4:hover {
     border-radius: 30px;
 }
     
-
-
-/* h4 {
-    position: relative;
-} */
 
 
 .logout {
@@ -127,31 +94,23 @@ button > h4:hover {
 }
 
 
-/* .logout {
-    justify-content: center;
-} */
-
-
-.saved > button {
+.user-main > button {
     border-bottom: 1px solid #dcdcdc;
-    margin-top: 0%;
+    /* padding: 0%;
+    margin: 2px */
+}
+
+.user-main {
+    margin: 100px;
 }
 
 button > h4 {
     color: #c0c0c0;
-    font-size: 30px;
+    font-size: 25px;
     font-family: 'Taviraj', serif;
 }
 
 
-/* .user-nav > img:hover {
-    -webkit-filter: brightness(70%);
-    -webkit-transition: all 1s ease;
-    -moz-transition: all 1s ease;
-    -o-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease;
-} */
 .user-nav > img {
     width: 100px;
     height: 100px;
@@ -161,3 +120,5 @@ button > h4 {
 img {
     width: 80px;
 }
+
+

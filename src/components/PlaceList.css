@@ -8,7 +8,8 @@
 
 
 .collection {
-    font-size: 15px;
+    display: flexbox;
+    /* font-size: 75px; */
     font-weight: normal;
     /* margin-right: 10px; */
     align-items: center;
@@ -21,6 +22,8 @@
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
     /* line-height: 1px;   */
     /* width: auto; */
+    /* margin: 5%; */
+    /* padding: 4%; */
 }
 
 

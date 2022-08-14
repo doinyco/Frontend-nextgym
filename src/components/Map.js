@@ -8,6 +8,8 @@ import GoogleMapReact from 'google-map-react';
 import { GoogleMap, LoadScript, Marker, InfoWindow, MarkerClusterer } from '@react-google-maps/api';
 import {useState} from "react";
 import { addFavoritePlace, removeFavoritePlace, getSavedPlaces } from '../backendAPI';
+import mrk1 from "../images/mrk1.png";
+import usericon from "../images/usericon.png";
 
 let GlobalMapInstance;
 let GlobalMapsInstance;
@@ -17,10 +19,10 @@ const Map = () => {
 
   const [ markers, setMarkers ] = useState([])
 
-  const mapStyles = {
-    height: "40%",
-    width: "40%"
-  };
+  // const mapStyles = {
+  //   height: "40%",
+  //   width: "40%"
+  // };
   
   const defaultCenter = {
     lat: 47.6062, lng: -122.3321
@@ -41,16 +43,18 @@ const Map = () => {
       marker.setMap(null);
     })
 
-    var markers2 = []
+    let markers2 = []
 
     search_results.map((result, index) => {
       const position = {lat: result.geometry.location.lat(), lng: result.geometry.location.lng()}
       console.log("position", position)
 
-      var marker = new GlobalMapsInstance.Marker({
+      let marker = new GlobalMapsInstance.Marker({
           position: position,
           title: result.name,
           animation: GlobalMapsInstance.Animation.DROP,
+          // icon: { url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"  },
+          // icon: {url: "https://icons8.com/icons/set/map-marker"},
           map: GlobalMapInstance,
       });
 
@@ -141,19 +145,21 @@ const Map = () => {
   return (
     <div className='map'>
       <header>
-        <h2>My Map</h2>
+        <h2>
+          My Map
+          <img src={mrk1}></img>
+        </h2>
       </header>
-      <main>
+    
         <div className="search-menu"><SearchMenu mapCb={mapCb}/></div>
         <div className="my-map">
-          <div style={{ height: '60vh', width: '60%' }}> 
-              {/* <SearchMenu mapCb={mapCb}/> */}
+          <div style={{ height: '70vh', width: '55%' }}> 
               <GoogleMapReact
               bootstrapURLKeys={{
                 key: process.env.REACT_APP_GOOGLE_MAPS_KEY,
                 libraries:['places'],
               }}
-                mapContainerStyle={mapStyles}
+                // mapContainerStyle={mapStyles}
                 defaultZoom={12}
                 defaultCenter={defaultCenter}
                 onGoogleApiLoaded={({ map, maps }) => {
@@ -163,9 +169,12 @@ const Map = () => {
                 yesIWantToUseGoogleMapApiInternals>
                 </GoogleMapReact>
             </div>
-            <Link to="/profile">User Profile</Link>
+            {/* <Link to="/profile">User Profile</Link> */}
         </div>
-      </main>
+        <div className="map-nav">
+          <Link to="/profile"><img src={usericon}></img></Link>
+        </div>
+      
       <footer/>
     </div>
   )
