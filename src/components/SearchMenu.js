@@ -38,7 +38,7 @@ function callback(mapCb) {
 }
 
 const SearchMenu = (props) => {
-    const [value, setValue] = React.useState('gym');
+    const [value, setValue] = React.useState('option');
 
     const handleChange = (event) => {
         console.log("click");
@@ -49,26 +49,16 @@ const SearchMenu = (props) => {
     
 
     return (
-        <div>
+        <div className="maps">
           <label>
-            Choose location type:
             <select value={value} onChange={handleChange}>
+              <option value="">Select your option</option>
               {options.map((option) => (
                 <option key={option.value} value={option.value}>{option.label}</option>
               ))}
             </select>
           </label>
-        </div>
-        // <div className="input-field">
-        //   <select onChange={handleChange}>
-        //   {options.map((option) => (
-        //     <option value={option.value}>{option.label}</option>
-        //   ))}
-
-        //   </select>
-        //   <label>Materialize Select</label>
-        // </div>
-        
+        </div>  
       );
 };
 

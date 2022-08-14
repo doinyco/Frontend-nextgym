@@ -8,9 +8,8 @@ import { getSavedPlaces } from "../backendAPI";
 import PlaceList from "./PlaceList";
 import Logout from "./Logout"
 import Auth from "./Auth";
-// import "materialize-css/dist/css/materialize.min.css";
-// import $ from "jquery";
-import map from "../images/map.png";
+// import map from "../images/map.png";
+import m2 from "../images/m2.png";
 import blueuser from "../images/blueuser.png"
 import home2 from "../images/home2.png"
 
@@ -30,53 +29,36 @@ const User = () => {
         } else {
             setPlacesListShowing(!placesListShowing)
         }
-
-        // setPlacesListShowing(!placesListShowing)
     }
 
     return (
-        <div className="ur">
+        <div className="container">
             <div className="logout"><Logout /></div>
             
             <header>
-                <h2>My Profile</h2>
+                <h2>{getGlobalUsername().username}'s Profile</h2>
             </header>
-            <div className="user-main">
+            <div className="user-icon">
                 <img src={blueuser}></img>
-                <br/>
-                <h3>{getGlobalUsername().username}</h3>
+            </div>
+            <div className="user-main">
                 <div className="saved">
                     <button onClick={showHidePlacelist}>
                         <h4>Saved Places</h4>
                         { placesListShowing ? <PlaceList placeData={places.places}/> : null }
-                    </button>
-                    
-
+                    </button>   
                 </div>
-                {/* <button onClick={showHidePlacelist}> */}
-                    {/* <div className="saved">
-                        Saved Places
-                    </div> */}
-                    {/* <h4>Saved Places</h4> */}
-                    {/* { placesListShowing ? <PlaceList placeData={places.places}/> : null } */}
-                {/* </button> */}
             </div>
+            <br/>
+            <br/>
+            <br/>
             <div className="user-nav">
-                    <Link to="/">
-                        <img src={home2}></img>
-                    </Link>
-                    <br/>
                     <Link to="/map">
-                        <img src={map}></img>
+                        <img src={m2}></img>
                     </Link>
                 </div>
-            {/* <footer/> */}
         </div>
     );
 };
-
-// User.propTypes = {
-//     name:PropTypes.string.isRequired
-// }
 
 export default User;

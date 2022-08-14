@@ -1,14 +1,19 @@
-.ur {
-    width: 100%;
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Taviraj:ital,wght@1,200&display=swap');
+
+
+.container {
     height: 100%;
+    width: 100%;
+    /* display: flex; */
 }
 
-img {
-    height: 80px;
-    width: 80px;
+.user-icon > img {
+    height: 100px;
+    width: 100px;
     background-image: none;
     margin-top: 30px;
-    /* margin-left: 45%; */
+    margin-left: 45%;
 }
 
 
@@ -20,34 +25,44 @@ img {
     margin: 0;
     padding: 0; */
     /* justify-content: flex-start; */
-    position: fixed;
+    /* position: fixed; */
     top: 80%;
     /* left: 50%; */
 }
 
-h2 {
-    font-size: 50px;
-    /* align-items: center;
-    display: flex; */
-    left: 50%;
+header > h2 {
+    font-size: 40px;
+    color: #FF6961;
+    font-family: Cinzel;
+    align-items: center;
+    display: flex;
+    margin-left: 43%;
 }
+
+.user-icon {
+    display: flex;
+}
+
+/* .user-icon  > h3 {
+    padding: 1px;
+} */
 
 .user-main  {
     /* display: flexbox;
     right: 50%; */
     display: flex;
-    align-items: center;
-   justify-content: center;
-   
+    /* align-items: center; */
+    justify-content: center;
+   /* height: 100%; */ 
 }
 
 .user-nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    left: 45%;
+    /* margin-left: 48%; */
     /* position: relative; */
-    clear: both;
+    /* clear: both; */
 
 }
 
@@ -62,6 +77,8 @@ button {
     background: none;
     font-size: 20px;
     margin-left: 35px;
+    /* height: auto;
+    width: auto; */
      
 }
 
@@ -72,14 +89,27 @@ button {
 
 .saved {
     font-size: 30px;
-    position: fixed;
+    /* position: fixed; */
     top: 35%;
     /* left: 45%; */   
 }
 
-h4:hover {
+/* h4:hover {
     color: rgba(249, 36, 206, 0.582);
+} */
+h4 {
+    /* line-height: 10px;  */
+    padding: 10px; 
+    /* margin-bottom: 0.5px; */
 }
+
+button > h4:hover {
+    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    color: white;
+    border-radius: 30px;
+}
+    
+
 
 /* h4 {
     position: relative;
@@ -96,7 +126,38 @@ h4:hover {
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
 
-.logout {
+
+/* .logout {
     justify-content: center;
+} */
+
+
+.saved > button {
+    border-bottom: 1px solid #dcdcdc;
+    margin-top: 0%;
 }
 
+button > h4 {
+    color: #c0c0c0;
+    font-size: 30px;
+    font-family: 'Taviraj', serif;
+}
+
+
+/* .user-nav > img:hover {
+    -webkit-filter: brightness(70%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+} */
+.user-nav > img {
+    width: 100px;
+    height: 100px;
+}
+
+
+img {
+    width: 80px;
+}

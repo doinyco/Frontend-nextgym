@@ -35,11 +35,11 @@ const Place = (props) => {
         
         <div className="List-info">
             {/* <li className="collection-item"><div>{props.name}</div><a href="#!" className="secondary-content"><i class="material-icons"><button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button></i></a></li> */}
-            <h4>
+            <h5>
                 {props.name}
                 
                 <button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button> 
-            </h4>
+            </h5>
             {/* <button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button>  */}
             {/* <p>{props.lat} {props.lon}</p> */}
             {/* <p>{props.place_id} {props.maps_place_id}</p> */}

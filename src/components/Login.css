@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Sacramento&display=swap');
+
 /* button {
     background: none;
     color: inherit;
@@ -10,21 +12,22 @@
 
 
 .login {
-  display: flexbox;
-  width: 300px;
-  height: 300px;
+  /* display: flexbox; */
+  width: 350px;
+  height: 360px;
   /* border: 2px solid rgb(242, 229, 109); */
-  padding: 40px;
-  margin: 20px;
+  /* padding: 50px; */
+  /* margin: 30px; */
   /* background-color: rgb(250, 250, 250); */
   -moz-box-shadow: 3px 3px 3px #ccc;
   -webkit-box-shadow: 3px 3px 3px #ccc;
-  box-shadow: 3px 3px 3px #ccc;
+  /* box-shadow: 3px 3px 3px #ccc; */
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
   /* box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);  */
   /* box-shadow: 0px 5px 10px 0px#FFD700; */
-  border-radius: 10px;
-  /* justify-content: center; */
+  border-radius: 15px;
 }
+
   
 
 /* .log {
@@ -32,43 +35,118 @@
   justify-content: center;
 }
 
-.sign-up {
+/* .sign-up {
   float: right;
-} */
+} */ 
 
-input {
-  background-color: #FFF6E5;
+.log > input {
+  background-color: #f8f8ff;
+  /* background-color: #fffafa; */
+  /* border-color:  #f8f8ff; */
+  border: thin;
+  /* border-style: hidden; */
+  
+  /* border-style: solid; */
   /* outline: none; */
-  border: none;
-  border-radius: 5px;
-  height: 30px;
+  /* border: none; */
+  border-radius: 30px;
+  height: 35px;
+  width: 250px;
+  font-size: 15px;
+  font-style: oblique;
+  /* font-family: 'Sacramento', cursive; */
+  margin-left: 8px;
+
   /* text-align: center; */
 }
 
 
-.log-button > input {
+/* .log-button > input {
   background-color: #FDB0A7;
-  width: 100px;
+  width: 150px;
   height: 30px;
   color: white;
   font-size: 20px;
   justify-content: center;
   font-weight: bold;
-
-}
+  border-radius: 30px;
+} */
 
 /* .sign-up > UserForm {
   background-color: #B9F4EE;
 } */
 
-.log > h3 {
-  color: #B9F4EE;
-  font-size: 25px;
+h3 {
+  /* color: #d8bfd8; */
+  color: #dcd0ff;
+  font-weight: bold;
+  font-size: 45px;
   text-align: center;
+  font-family: 'Sacramento', cursive;
 }
 
-.sign-up > h3 {
-  color: #FDB0A7;
-  font-size: 25px;
+.signup > h4 {
+  /* color: #FDB0A7; */
+  font-size: 20px;
   text-align: center;
+  font-weight: lighter;
 }
+
+h4 > input {
+  border: none;
+  background-color: white;
+  font-size: 20px;
+  /* color: #b19cd9; */
+  color: #8878c3;
+  text-decoration: underline;
+}
+
+
+h4 > input:hover {
+  /* color: -50%; */
+  filter: brightness(150%);
+  background-color: #ccc;
+}
+
+
+
+/* .signup {
+  padding: 5px;
+} */
+
+form {
+  border-bottom: 1px solid #dcdcdc;
+  margin-left: 45px;
+  margin-right: 45px;
+}
+
+/* .signup {
+  background-color: #f2f3f4;
+} */
+
+.log-button > input {
+  transition: all .5s ease;
+    color: #dcd0ff;
+    border: 2px solid #dcd0ff;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.5;
+    font-size: 18px;
+    background-color : transparent;
+    padding: 12px;
+    outline: none;
+    border-radius: 10px;
+    font-weight: bold;
+    width: 120px;
+}
+
+.log-button > input:hover {
+  color: #ffffff;
+  background-color: #dcd0ff;
+}
+
+.log-button {
+  margin-left: 79px;
+}
+

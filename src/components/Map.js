@@ -79,12 +79,15 @@ const Map = () => {
             marker.infoWindowVisible = false;
           });
 
-          console.log("marker.result", marker.result)
-          console.log("url", marker.result.photos[0].getUrl())
-          const description = "<p>" + marker.result.name + "</p>" +
-          "<p>" + "Rating: " + marker.result.rating + "</p>" + 
-          "<img src=" + marker.result.photos[0].getUrl() + ">"
-          marker.infoWindow.setContent(description + '<button id="' + marker.maps_place_id + '"</button>');
+          const description = `<section>` +
+          `<p>${marker.result.name}</p>` +
+          `<p>Rating: ${marker.result.rating}</p>` + 
+          `<img src=${marker.result.photos[0].getUrl()}>` + 
+          `<button id='${marker.maps_place_id}'</button>` +
+          `</section>`
+
+          
+          marker.infoWindow.setContent(description);
         }
 
         if (marker.infoWindowVisible) {
@@ -159,26 +162,8 @@ const Map = () => {
                 }}
                 yesIWantToUseGoogleMapApiInternals>
                 </GoogleMapReact>
-                <nav>
-                  <ul className="nav">
-                      <li>
-                          <Link to="/profile">
-                              <div id="go-to-user">Profile</div>
-                          </Link>
-                      </li>
-                      <li>
-                        <Link to="/"> 
-                          <div id="home">home</div>
-                        </Link>
-                      </li>
-                      {/* <li>
-                          <Link to="/map">
-                              <div id="go-to-map">Map</div>
-                          </Link>
-                      </li> */}
-                  </ul>
-              </nav>  
             </div>
+            <Link to="/profile">User Profile</Link>
         </div>
       </main>
       <footer/>

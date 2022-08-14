@@ -9,6 +9,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { useNavigate } from "react-router-dom";
 
+import log1 from "../images/log1.png";
+
 const md5 = require('md5');
 
 const authenticateUser = (username, password, cb) => {
@@ -59,13 +61,13 @@ const Login = (props) => {
 
     return (
         <div className="login">
+            <h3>Log In</h3>
             <form onSubmit={handleFormSubmissionn}>
-                <div className="auth">
                     <div className="log">
-                        <h3>Login</h3>
                         <input
                             name="username"
                             type="text"
+                            // placeholder= <img src={log1}></img>
                             placeholder="User name"
                             value={username}
                             onChange={handleFormInput}
@@ -81,20 +83,23 @@ const Login = (props) => {
                         />
                         <br/>
                         <br/>
+                        {/* <br/> */}
                         <div className="log-button">
                             <input type="submit" value="Log In" />
-                        </div>
-                        <div className="sign-up">
-                        {/* <h3>Sign-up</h3> */}
-                        {/* <UserForm/> */}
-                        <h4>New user?</h4>
-                    </div>
-                        
+                        </div>   
                     </div>
                     <br/>
-                </div>
+                    {/* <br/> */}
             </form>
-            <input type="button" onClick={signUpCb} value="Sign up"/>
+            <div className="signup">
+                <h4>
+                    New user? <span/><span/><span/><span/>
+                    <input type="button" onClick={signUpCb} value="Sign up"/>
+                </h4>
+                {/* <input type="button" onClick={signUpCb} value="Sign up"/> */}
+
+            </div>
+            {/* <input type="button" onClick={signUpCb} value="Sign up"/> */}
         </div>
     );
 };

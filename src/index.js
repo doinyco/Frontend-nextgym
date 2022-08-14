@@ -7,7 +7,7 @@ import User from "./components/User.js";
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Map from "./components/Map.js";
 import SignUp from "./components/SignUp";
-import HomePage from "./components/HomePage.js";
+// import HomePage from "./components/HomePage.js";
 // import "materialize-css/dist/css/materialize.min.css";
 // import $ from "jquery";
 
@@ -35,7 +35,7 @@ root.render(
       <Route path="/" element={<App />} />
       <Route path="map" element={<Map />} />
       <Route path="signup" element={<SignUp />} />
-      <Route path="home" element={<HomePage />} />
+      {/* <Route path="home" element={<HomePage />} /> */}
     </Routes>
   </BrowserRouter>
 );
