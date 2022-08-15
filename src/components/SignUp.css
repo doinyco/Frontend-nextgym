@@ -1,13 +1,153 @@
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-  }
+/* @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
-.vertical-center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
+.SIGNUP {
+  /* height: 100%;
+  width: 100%; */
+  /* display: flex; */
+  /* justify-content: center; */
+  display: flexbox;
+  background-color: #ffffff;
 }
+
+/* .SIGNUP > form {
+  width: 100%;
+  height: 100%;
+} */
+
+form {
+  display: flex;
+}
+
+.signup-form {
+  /* display: flex; */
+  flex-direction: column;
+  /* border: 2px solid black; */
+  margin-top: 8vmax;
+  margin-right: 30vmax;
+  margin-left: 42vmax;
+  width: 22vmax;
+  height: 24vmax;
+  /* margin-bottom: 20vmax; */
+  justify-content: center;
+  box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
+  border-radius: 1vmax;
+  background-color: #ffffff;
+  
+}
+
+
+/* form > .signup-form {
+  justify-content: center;
+} */
+
+
+
+.SIGNUP > h2 {
+  color: black;
+  display: inline-flex;
+  /* font-family: 'Great Vibes', cursive; */
+  font-family: 'Dancing Script', cursive;
+  font-style: normal;
+  /* text-decoration: underline; */
+  /* text-decoration-thickness: 0.07vmax; */
+  margin-top: 3vmax;
+  margin-left: 47vmax;
+  font-weight: normal;
+}
+
+
+.signup-form > input {
+  /* display: inline-flex; */
+  /* justify-content: center; */
+  /* margin-left: 60%; */
+  padding: 0.5vmax;
+  margin: 0.6vmax;
+  height: 0.9vmax;
+  width: 17vmax;
+  border-radius: 2vmax;
+  font-size: 0.8vmax;
+  font-style: oblique;
+  margin-top: 1vmax;
+  margin-left: 1.8vmax;
+  border: hidden;
+  border-bottom: 0.07vmax solid #48d1cc;
+}
+
+.signup-s {
+  display: flex;
+}
+
+
+.signup-form > h4 {
+  /* display: inline-flex; */
+  /* font-family: 'Sacramento', cursive; */
+  font-size: 1.3vmax;
+  margin-left: 2.3vmax;
+  /* color: #a8e4a0; */
+  /* color: #aaf0d1; */
+  color: #48d1cc;
+  font-style: oblique;
+  font-weight: normal;
+  /* font-family: 'Great Vibes', cursive;
+  font-style: normal;
+  text-decoration: underline;
+  text-decoration-thickness: 0.07vmax; */
+
+  /* margin-left: 4vmax;
+  margin-right: 2vmax; */
+}
+
+.SIGNUP > footer {
+  margin-top: 14%;
+  display: inline-flex;
+  margin-left: 48%;
+  border-top: 0.06vmax solid #dcdcdc;
+  padding-top: 0.5%;
+  font-style: oblique;
+  font-size: 0.9vmax;
+
+}
+
+
+.signup-nav {
+  margin-left: 50%;
+}
+
+
+.signup-s > input {
+  transition: all .5s ease;
+  color: #40e0d0;
+  border: 0.13vmax solid #40e0d0;
+  font-family:'Montserrat', sans-serif;
+  line-height: 0.4;
+  font-size: 1.1vmax;
+  background-color : transparent;
+  padding: 0.8vmax;
+  outline: none;
+  border-radius: 0.7vmax;
+  font-weight: bold;
+  width: 9vmax;
+  /* margin: 0.9vmax; */
+  margin-top: 1.3vmax;
+  margin-left: 6.5vmax;
+  border-radius: 0.6vmax;
+}
+
+.signup-s > input:hover {
+  color: #ffffff;
+  background-color: #40e0d0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

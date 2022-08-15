@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import axios from "axios";
 import md5 from "md5";
+import { Link } from "react-router-dom";
 
 import { setGlobalUsername } from "..";
 
@@ -62,52 +63,57 @@ const CreateProfile = () => {
     }
 
     return (
-        <div>
+        <div className="SIGNUP">
+            <h2>My next gym</h2>
+            <br/>
+            <div className="signup-nav">
+                <Link to="/">
+                    <div id="home">Home</div>    
+                </Link>
+            </div>
             <form onSubmit={handleFormSubmissionn}>
-                <div className="center">
-                    <div className="vertical-center">
-                        <div>
+                <div className="signup-form">
+                    <h4>Welcome, create profile here</h4>
                             <input
                                 name="username"
                                 type="text"
-                                placeholder="User name"
+                                placeholder=" User name"
                                 value={username}
                                 onChange={handleUsernameInput}
                             />
-                        </div>
-                        <div>
-                        <input
-                            name="first name"
-                            type="text"
-                            placeholder="First name"
-                            value={firstname}
-                            onChange={handleFirstNameInput}
-                        />
-                        </div>
-                        <div>
-                        <input
-                            name="last name"
-                            type="text"
-                            placeholder="Last name"
-                            value={lastname}
-                            onChange={handleLastNameInput}
-                        />
-                        </div>
-                        <div>
-                        <input
-                            name="password"
-                            type="password"
-                            placeholder="Password"
-                            value={password}
-                            onChange={handlePasswordInput}
-                        />
-                        </div>
-                        <div>
-                        <input type="submit" value="Sign up" />
+                            <br/>
+                            <input
+                                name="first name"
+                                type="text"
+                                placeholder=" First name"
+                                value={firstname}
+                                onChange={handleFirstNameInput}
+                            />
+                            <br/>
+                            <input
+                                name="last name"
+                                type="text"
+                                placeholder=" Last name"
+                                value={lastname}
+                                onChange={handleLastNameInput}
+                            />
+                            <br/>
+                            <input
+                                name="password"
+                                type="password"
+                                placeholder=" Password"
+                                value={password}
+                                onChange={handlePasswordInput}
+                            />
+                        <div className="signup-s">
+                            <input type="submit" value="GET STARTED" />
                         </div>
                     </div>
-                </div>
             </form>
+            {/* <Link to="/">
+                <div id="home">Home</div>    
+            </Link> */}
+            <footer>Doina Colun &copy; 2022</footer>
         </div>
     );
 };

@@ -3,7 +3,7 @@
 
 .App {
   display: flexbox;
-  flex-direction: olumn-reverse;
+  flex-direction: column-reverse;
   background-color: #ffffff;
   
 }
@@ -34,7 +34,7 @@ h1 {
 }
 
 
-footer {
+.App > footer {
   margin-top: 16%;
   display: inline-block;
   margin-left: 45%;
