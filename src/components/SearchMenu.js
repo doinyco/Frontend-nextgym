@@ -7,11 +7,11 @@ const google = window.google;
 const seattleCenter = {lat: 47.6062, lng: -122.3321}
 
 const options = [
-    { label: 'gym', value: 'gym' },
-    { label: 'tennis', value: 'table tennis' },
-    { label: 'fitness', value: 'fitness' },
-    { label: 'pilates', value: 'pilates' },
-    { label: 'golf', value: 'golf' }
+    { label: 'Gym', value: 'gym' },
+    { label: 'Table tennis', value: 'table tennis' },
+    { label: 'Fitness', value: 'fitness' },
+    { label: 'Pilates', value: 'pilates' },
+    { label: 'Golf', value: 'golf' }
 
 ];
 

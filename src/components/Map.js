@@ -153,7 +153,7 @@ const Map = () => {
     
         <div className="search-menu"><SearchMenu mapCb={mapCb}/></div>
         <div className="my-map">
-          <div style={{ height: '70vh', width: '55%' }}> 
+          <div style={{ height: '35vmax', width: '55vmax' }}> 
               <GoogleMapReact
               bootstrapURLKeys={{
                 key: process.env.REACT_APP_GOOGLE_MAPS_KEY,

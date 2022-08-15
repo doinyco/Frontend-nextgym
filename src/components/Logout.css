@@ -13,8 +13,14 @@ p {
 .logout > button {
     /* font-size: 30px; */
     color: white;
-    font-size: 23px;
+    font-size: 0.9vmax;
+    width: auto;
     font-weight: bold;
-    text-align: center;
-    margin-right: 20px;
+    position: static;
+    text-align: left;
+    
+    /* text-align: center; */
+    /* margin-right: 20px; */
+    /* justify-content: space-around; */
 }
+

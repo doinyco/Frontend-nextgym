@@ -3,28 +3,34 @@
 
 .App {
   display: flexbox;
-  flex-direction: column;
+  flex-direction: olumn-reverse;
   background-color: #ffffff;
   
 }
 
 h1 {
-  font-size: 60px;
-  border-bottom: 1px solid 	#FFD700;
+  /* display: inline; */
+  font-size: 4.1vmax;
+  /* border-bottom: 1px solid 	#FFD700; */
+  text-decoration: underline;
+  text-decoration-thickness: 0.07vmax;
   margin-left: 5%;
-  margin-right: 75%;
-  text-align: center;
+  /* margin-right: 75%; */
+  /* float: left; */
+
+  /* text-align: center; */
   font-family: 'Great Vibes', cursive;
   font-weight: normal;
   font-style: normal;
+  margin-bottom: 11vmax;
 }
 
 
 .App > main {
   display: flex;
-  margin-top: 120px;
-  margin-left: 300px;
-  margin-right: 20px;
+  margin-left: 16vmax;
+  /* margin-top: 20vmax;
+  /* margin-right: 2vmax; */
 }
 
 
@@ -32,25 +38,28 @@ footer {
   margin-top: 16%;
   display: inline-block;
   margin-left: 45%;
-  border-top: 1px solid #dcdcdc;
+  border-top: 0.06vmax solid #dcdcdc;
   padding-top: 0.5%;
   font-style: oblique;
+  font-size: 0.9vmax;
   
 
 }
 
 .quote > p {
-  margin-right: 200px;
-  margin-left: 50px;
-  margin-top: 150px;
+  display: flex-box;
+  flex-direction: column-reverse;
+  margin-right: 17vmax;
+  margin-left: 5vmax;
+  margin-top: 5vmax;
   font-family: 'Advent Pro', sans-serif;
-  font-size: 60px;
-  text-indent: 50px;
-  margin-bottom: 100px;
+  font-size: 3.8vmax;
+  text-indent: 2vmax;
+  /* margin-bottom: 100px; */
   font-weight: normal;
 }
 
-.authentication {
+/* .authentication {
   margin-left: 10px;
   margin-right: 10px;
-}
+} */

@@ -5,7 +5,7 @@
 .container {
     height: 100%;
     width: 100%;
-    /* display: flex; */
+    display: flexbox;
 }
 
 .user-icon > img {
@@ -30,8 +30,8 @@
     /* left: 50%; */
 }
 
-header > h2 {
-    font-size: 40px;
+ h2 {
+    font-size: 2.3vmax;
     color: #FF6961;
     font-family: Cinzel;
     align-items: center;
@@ -67,7 +67,7 @@ button {
     padding: 0;
     border: none;
     background: none;
-    font-size: 20px;
+    font-size: 1.5vw;
     margin-left: 35px;
     /* height: auto;
     width: auto; */
@@ -84,11 +84,14 @@ button > h4:hover {
 
 
 .logout {
-    position: fixed;
-    top: 5%;
-    left: 90%;
-    width: 120px;
-    height: 30px;
+    display: inline-flex;
+    /* position: fixed; */
+    /* top: 10%; */
+    float: right;
+    
+    /* right: 20px; */
+    width: 6.9vmax;
+    height: 2vmax;
     border-radius: 20px;
     background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
@@ -106,7 +109,7 @@ button > h4:hover {
 
 button > h4 {
     color: #c0c0c0;
-    font-size: 25px;
+    font-size: 1.4vmax;
     font-family: 'Taviraj', serif;
 }
 
@@ -118,7 +121,7 @@ button > h4 {
 
 
 img {
-    width: 80px;
+    width: 4.4vmax;
 }
 
 

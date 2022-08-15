@@ -47,9 +47,6 @@ const User = () => {
                         { placesListShowing ? <PlaceList placeData={places.places}/> : null }
                     </button>   
             </div>
-            {/* <br/>
-            <br/>
-            <br/> */}
             <div className="user-nav">
                     <Link to="/map">
                         <img src={m2}></img>
