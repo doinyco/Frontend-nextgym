@@ -66,11 +66,6 @@ const CreateProfile = () => {
         <div className="SIGNUP">
             <h2>My next gym</h2>
             <br/>
-            {/* <div className="signup-nav">
-                <Link to="/">
-                    <div id="home">Home</div>    
-                </Link>
-            </div> */}
             <form onSubmit={handleFormSubmissionn}>
                 <div className="signup-form">
                     <h4>Welcome, create profile here</h4>
@@ -107,15 +102,9 @@ const CreateProfile = () => {
                             />
                         <div className="signup-s">
                             <input type="submit" value="CREATE" /> 
-                                {/* <Link to="/">
-                                    <div id="home"> or go Home</div>    
-                                </Link> */}
                         </div>
                     </div>
             </form>
-            {/* <Link to="/">
-                <div id="home">Home</div>    
-            </Link> */}
             <footer>Doina Colun &copy; 2022</footer>
         </div>
     );

@@ -4,17 +4,9 @@
   display: inline-flexbox;
   width: 20vmax;
   height: 20vmax;
-  /* border: 2px solid rgb(242, 229, 109); */
-  /* padding: 50px; */
-  /* margin: 30px; */
-  /* background-color: rgb(250, 250, 250); */
   -moz-box-shadow: 0.02vmax 0.02vmax 0.02vmax #ccc;
   -webkit-box-shadow: 0.02vmax 0.02vmax 0.02vmax #ccc;
-  /* box-shadow: 3px 3px 3px #ccc; */
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
-  /* box-shadow: rgba(50, 50, 78, 0.25) 0vmax 2vmax 4.5vmax -1vmax, rgba(0, 0, 0, 0.3) 0vmax 1vmax 2.4vmax -1vmax; */
-  /* box-shadow: 0px 4px 6px 0px rgba(0, 0, 0, 0.5);  */
-  /* box-shadow: 0px 5px 10px 0px#FFD700; */
   border-radius: 15px;
 }
 
@@ -22,46 +14,17 @@
 .log > input {
   display: flex;
   background-color: #f8f8ff;
-  /* background-color: #fffafa; */
-  /* border-color:  #f8f8ff; */
   border: thin;
-  /* border-style: hidden; */
-  
-  /* border-style: solid; */
-  /* outline: none; */
-  /* border: none; */
   border-radius: 30px;
   height: 2vmax;
   width: 17vmax;
   font-size: 0.9vmax;
   font-style: oblique;
-  /* font-family: 'Sacramento', cursive; */
-  /* margin-left: 50px; */
   margin: 0.4vmax;
-  /* padding: 10px; */
-
-
-  /* text-align: center; */
 }
 
 
-/* .log-button > input {
-  background-color: #FDB0A7;
-  width: 150px;
-  height: 30px;
-  color: white;
-  font-size: 20px;
-  justify-content: center;
-  font-weight: bold;
-  border-radius: 30px;
-} */
-
-/* .sign-up > UserForm {
-  background-color: #B9F4EE;
-} */
-
 h3 {
-  /* color: #d8bfd8; */
   color: #dcd0ff;
   font-weight: bold;
   font-size: 2.5vmax;
@@ -70,7 +33,6 @@ h3 {
 }
 
 .signup > h4 {
-  /* color: #FDB0A7; */
   font-size: 1.1vmax;
   text-align: center;
   font-weight: lighter;
@@ -80,23 +42,15 @@ h4 > input {
   border: none;
   background-color: white;
   font-size: 1.1vmax;
-  /* color: #b19cd9; */
   color: #8878c3;
   text-decoration: underline;
 }
 
 
 h4 > input:hover {
-  /* color: -50%; */
   filter: brightness(150%);
   background-color: #ccc;
 }
-
-
-
-/* .signup {
-  padding: 5px;
-} */
 
 .login > form {
   display: flex;
@@ -113,7 +67,6 @@ h4 > input:hover {
     border: 2px solid #dcd0ff;
     font-family:'Montserrat', sans-serif;
     text-transform: uppercase;
-    /* text-align: center; */
     line-height: 0.4;
     font-size: 1.1vmax;
     background-color : transparent;

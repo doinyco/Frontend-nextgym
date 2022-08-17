@@ -19,11 +19,6 @@ const Map = () => {
 
   const [ markers, setMarkers ] = useState([])
 
-  // const mapStyles = {
-  //   height: "40%",
-  //   width: "40%"
-  // };
-  
   const defaultCenter = {
     lat: 47.6062, lng: -122.3321
   };
@@ -53,8 +48,6 @@ const Map = () => {
           position: position,
           title: result.name,
           animation: GlobalMapsInstance.Animation.DROP,
-          // icon: { url: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"  },
-          // icon: {url: "https://icons8.com/icons/set/map-marker"},
           map: GlobalMapInstance,
       });
 
@@ -159,7 +152,6 @@ const Map = () => {
                 key: process.env.REACT_APP_GOOGLE_MAPS_KEY,
                 libraries:['places'],
               }}
-                // mapContainerStyle={mapStyles}
                 defaultZoom={12}
                 defaultCenter={defaultCenter}
                 onGoogleApiLoaded={({ map, maps }) => {
@@ -169,7 +161,6 @@ const Map = () => {
                 yesIWantToUseGoogleMapApiInternals>
                 </GoogleMapReact>
             </div>
-            {/* <Link to="/profile">User Profile</Link> */}
         </div>
         <div className="map-nav">
           <Link to="/profile"><img src={usericon}></img></Link>

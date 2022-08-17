@@ -2,33 +2,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 
 .SIGNUP {
-  /* height: 100%;
-  width: 100%; */
-  /* display: flex; */
-  /* justify-content: center; */
   display: flexbox;
   background-color: #ffffff;
 }
-
-/* .SIGNUP > form {
-  width: 100%;
-  height: 100%;
-} */
 
 form {
   display: flex;
 }
 
 .signup-form {
-  /* display: flex; */
   flex-direction: column;
-  /* border: 2px solid black; */
   margin-top: 8vmax;
   margin-right: 30vmax;
   margin-left: 42vmax;
   width: 22vmax;
   height: 24vmax;
-  /* margin-bottom: 20vmax; */
   justify-content: center;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 0px 16px;
   border-radius: 1vmax;
@@ -36,18 +24,10 @@ form {
   
 }
 
-
-/* form > .signup-form {
-  justify-content: center;
-} */
-
-
-
 .SIGNUP > h2 {
   color: black;
   display: inline-flex;
   font-family: 'Great Vibes', cursive;
-  /* font-family: 'Dancing Script', cursive; */
   font-style: normal;
   text-decoration: underline; 
   text-decoration-thickness: 0.07vmax;
@@ -58,9 +38,6 @@ form {
 
 
 .signup-form > input {
-  /* display: inline-flex; */
-  /* justify-content: center; */
-  /* margin-left: 60%; */
   padding: 0.5vmax;
   margin: 0.6vmax;
   height: 0.9vmax;
@@ -80,22 +57,11 @@ form {
 
 
 .signup-form > h4 {
-  /* display: inline-flex; */
-  /* font-family: 'Sacramento', cursive; */
   font-size: 1.3vmax;
   margin-left: 2.3vmax;
-  /* color: #a8e4a0; */
-  /* color: #aaf0d1; */
   color: #48d1cc;
   font-style: oblique;
   font-weight: normal;
-  /* font-family: 'Great Vibes', cursive;
-  font-style: normal;
-  text-decoration: underline;
-  text-decoration-thickness: 0.07vmax; */
-
-  /* margin-left: 4vmax;
-  margin-right: 2vmax; */
 }
 
 .SIGNUP > footer {
@@ -128,7 +94,6 @@ form {
   border-radius: 0.7vmax;
   font-weight: bold;
   width: 9vmax;
-  /* margin: 0.9vmax; */
   margin-top: 1.3vmax;
   margin-left: 6.5vmax;
   border-radius: 0.6vmax;
@@ -139,9 +104,6 @@ form {
   background-color: #40e0d0;
 }
 
-.signup-form > .home {
-  margin-right: 5vmax;
-}
 
 
 

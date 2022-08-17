@@ -2,10 +2,8 @@ import "./Place.css";
 import React from "react";
 import PropTypes from 'prop-types';
 import { useState } from "react";
-
 import { addFavoritePlace, removeFavoritePlace } from "../backendAPI"
 import { getGlobalUsername } from ".."
-// import { removeFavoritePlaceHelper } from "./Map.js";
 
 const Place = (props) => {
     const [savedPlace, setSavedPlace] = useState(true);
@@ -34,16 +32,10 @@ const Place = (props) => {
     return (
         
         <div className="List-info">
-            {/* <li className="collection-item"><div>{props.name}</div><a href="#!" className="secondary-content"><i class="material-icons"><button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button></i></a></li> */}
             <h5>
                 {props.name}
-                
                 <button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button> 
             </h5>
-            {/* <button onClick={buttonCb}>{savedPlace ? "❤️" : "🤍"}</button>  */}
-            {/* <p>{props.lat} {props.lon}</p> */}
-            {/* <p>{props.place_id} {props.maps_place_id}</p> */}
-            {/* <button>Remove</button> */}
         </div>
     
     );

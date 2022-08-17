@@ -18,16 +18,7 @@
 
 
 .user-nav {
-    /* font-size: 25px; */
-    /* display: "inline-block";
-    list-style-type: none;
-    text-align: center;
-    margin: 0;
-    padding: 0; */
-    /* justify-content: flex-start; */
-    /* position: fixed; */
     top: 80%;
-    /* left: 50%; */
 }
 
  h2 {
@@ -52,11 +43,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    
     margin-left: 1vmax;
-    /* position: relative; */
-    /* clear: both; */
-
 }
 
 .container > .user-nav:hover {
@@ -69,24 +56,17 @@ button {
     background: none;
     font-size: 1.5vw;
     margin-left: 3vmax;
-    /* height: auto;
-    width: auto; */
-     
 }
 
 
 button > h4:hover {
-    /* background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%); */
     color: #00bfff;
-    /* color: white; */
     border-radius: 30px;
 }
     
 
 .user-main > button {
     border-bottom: 1px solid #dcdcdc;
-    /* padding: 0%;
-    margin: 2px */
 }
 
 .user-main {
@@ -115,7 +95,6 @@ button > h4 {
     margin-top: 1vmax;
     margin-left: 42vmax;
     margin-bottom: 3vmax;
-    /* margin: 4vmax; */
     padding: 2vmax;
 }
 
@@ -125,23 +104,6 @@ button > h4 {
     height: 4.3vmax;
 }
 
-/* .user-main > .progress {
-    font-size: 2vmax;
-} */
-
-
-
-/* .progress > button {
-        
-        background-color: white;
-        border-radius: 10px;
-        letter-spacing: 2px;
-        margin: 5px;
-        margin-left: 2px;
-        margin-right: 2px;
-        padding: 5px;
-        height: 25px;
-} */
 
 .words{
     font-weight: normal;

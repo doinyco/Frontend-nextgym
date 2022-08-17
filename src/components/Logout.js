@@ -16,7 +16,6 @@ const Logout = () => {
 
     return (
         <div className="logout">
-            {/* <p>{getGlobalUsername().username}</p> */}
             <button onClick={logout}>Logout</button>
         </div>
     );

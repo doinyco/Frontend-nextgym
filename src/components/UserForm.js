@@ -1,7 +1,6 @@
 import "./UserForm.css";
 import PropTypes from "prop-types";
 import { useState } from "react";
-// import { handlePasswordInput } from "./components/Login";
 
 const defaultUser = {
     username : ""
@@ -37,9 +36,6 @@ const UserForm = (props) => {
         <div className="new-user">
             <section>{message}</section>
             <form onSubmit={handleFormSubmission}>
-                
-                {/* <h3>Sign-up</h3> */}
-                
                 <input
                     maxLength={30}
                     name="username"
@@ -52,8 +48,7 @@ const UserForm = (props) => {
                 <br/>
                 <div className="signup-button">
                     <input type="submit" value="Sign-uppp" />
-                </div>
-                
+                </div>  
             </form>
         </div>
     );

@@ -1,12 +1,3 @@
-
-
-.logout > button {
-
-}
-
-
-
-
 .logout > button {
     display: inline;
     transition: all .5s ease;

@@ -1,15 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Advent+Pro:wght@300&display=swap'); */
- 
-
-
-.map {
-    display: flexbox;
-    /* justify-content: center; */
-    /* background-image: linear-gradient(to top, #dfe9f3 0%, white 100%); */
-}
-
 .map > header h2 {
-    /* text-align: center; */
     font-family: Playfair Display;
     color: #e51a4c;
     font-size: 2.1vmax;
@@ -18,17 +7,14 @@
 .my-map {
   display: flex;
   justify-content: center;
-  /* margin-top: 10px; */
 }
 
 .search-menu {
     display: flex;
     margin-bottom: 0.01vmax;
     margin-left: 19vmax;
-    /* font-size: 19px; */
     border: none;
     background-color: white;
-    /* font-size: 40px; */
     color: #8878c3;   
 }
 
@@ -44,19 +30,13 @@ section > p {
     margin: 1px;
     padding: 1px;
     margin-left: 0%;
-    /* float: center; */
     margin-bottom: 10px;
 }
 
 section {
-    /* width: 100px;
-    height: 30px; */
     width: 90px;
     height: 40px;
-    
     display: inline;
-    /* margin: 0px;
-    padding: 0px; */
 }
 
 section > button {
@@ -67,9 +47,7 @@ section > button {
 }
 
 .map-nav {
-    /* margin-top: 1%; */
     margin-left: 50%;
-
 }
 
 
@@ -78,17 +56,9 @@ h2 > img {
     margin-left: 10px;
 }
 
-/* .map-nav > img {
-    width: 7vmax;
-} */
-
 .map > .map-nav img {
     width: 5vmax;
 }
-
-/* img:hover {
-    filter: drop-shadow(8px 8px 10px #d3d3d3); 
-} */
 
 .map-nav img:hover {
     filter: drop-shadow(8px 8px 10px #8ab9f1); 

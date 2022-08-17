@@ -48,7 +48,6 @@ const HistoryForm = (props) => {
     return (
         <div className="historyform">
             <form onSubmit={handleFormSubmission}>
-                {/* <label>Today's Progress</label> */}
                 <div className="input-form">
                     <label>Today's Progress</label>
                     <div className="inputs">

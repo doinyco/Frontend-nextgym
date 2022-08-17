@@ -15,11 +15,6 @@ const options = [
     { label: 'Pilates', value: 'pilates' },
     { label: 'Aerobics', value: 'aerobics' },
     { label: 'Dance classes', value: 'dance classes' }
-    // { label: 'Golf', value: 'golf' },
-    // { label: 'Golf', value: 'golf' },
-    // { label: 'Golf', value: 'golf' }
-
-
 ];
 
 function search(query, mapCb) {

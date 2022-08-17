@@ -5,7 +5,6 @@
 }
 
 label {
-    /* font-size: 1vmax; */
     display: inline;
     font-weight: bold;
     font-style: oblique;
@@ -16,18 +15,10 @@ label {
     font-family: 'Taviraj', serif;
 }
 
-/* .input {
-    width: 5vmax;
-    height: 2vmax;
-} */
-
 .inputs {
     display: flex;
     flex-direction: column;
     width: 15vmax;
-    /* height: 15vmax;
-    line-height: 1.5vmax; */
-    /* margin-bottom: 1vmax; */
     font-size: 2vmax;  
 }
 
@@ -49,9 +40,7 @@ label {
 }
 
 .input-form > label {
-    margin-left: 2vmax;
-    /* padding: 2vmax;
-    margin: 1vmax; */
+    margin-left: 2vmax;  
 }
 
 
@@ -61,7 +50,6 @@ label {
     font-weight: bold;
     border: none;
     font-style: italic;
-    /* color: #80daeb; */
     color: #fd0e35;
     background-color: white;
 }

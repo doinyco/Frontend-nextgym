@@ -66,7 +66,6 @@ const Login = (props) => {
                         <input
                             name="username"
                             type="text"
-                            // placeholder= <img src={log1}></img>
                             placeholder=" User name"
                             value={username}
                             onChange={handleFormInput}
@@ -88,10 +87,7 @@ const Login = (props) => {
                     New user? <span/><span/><span/><span/>
                     <input type="button" onClick={signUpCb} value="Sign up"/>
                 </h4>
-                {/* <input type="button" onClick={signUpCb} value="Sign up"/> */}
-
             </div>
-            {/* <input type="button" onClick={signUpCb} value="Sign up"/> */}
         </div>
     );
 };

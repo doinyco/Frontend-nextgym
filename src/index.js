@@ -26,16 +26,12 @@ export function setGlobalUsername(username) {
 }
 
 root.render(
-  // <React.StrictMode>
-  //   <App />
-  // </React.StrictMode>
   <BrowserRouter>
     <Routes>
       <Route path="profile" element={<User />} />
       <Route path="/" element={<App />} />
       <Route path="map" element={<Map />} />
       <Route path="signup" element={<SignUp />} />
-      {/* <Route path="home" element={<HomePage />} /> */}
     </Routes>
   </BrowserRouter>
 );

@@ -1,10 +1,3 @@
-/* .history > p {
-    font-size: 1vmax;
-}
-
-.history {
-    flex-direction: inline-flex;
-} */
 
 .history > h6 {
     font-size: 0.8vmax;
@@ -13,10 +6,8 @@
     background-color: white;
     border-radius: 10px;
     padding: 5px;
-    /* height: 25px; */
     letter-spacing: 2px;
     margin: 5px;
     margin-left: 2px;
     margin-right: 2px;
-
 }

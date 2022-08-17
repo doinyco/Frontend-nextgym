@@ -1,29 +1,9 @@
-/* .placeList {
-    color:black;
-    padding: 30px;
-    margin: 20px;
-    border-radius: 1em;
-    
-} */
-
-
 .collection {
-    /* font-size: 75px; */
     font-weight: normal;
-    /* margin-right: 10px; */
     align-items: center;
-    /* position: fixed; */
-    /* left: 50%; */
-    /* border-style: ridge; */
-    /* background-color: #F3F3FC; */
     background-color: #f4f0ec;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
-    /* line-height: 1px;   */
-    /* width: auto; */
     margin: 10%;
-    /* padding: 4%; */
 }
 
-
-/* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; */

@@ -72,10 +72,6 @@ const User = () => {
                                 </div>
                         </button>
                     </div>
-                    {/* <button onClick={showHideHistories}>
-                        <h4>Show Progress</h4>
-                        { historiesShowing ? <Histories histories={histories}/> : null }
-                    </button>  */}
             </div>
             <div className="user-nav">
                     <Link to="/map">
