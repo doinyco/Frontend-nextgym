@@ -14,16 +14,6 @@ const PlaceList = (props) => {
     return (
         <div className="collection">
             {Favourites}
-            {/* <ul className="collection">
-                {Favourites}
-            </ul> */}
-            {/* {
-                props.placeData.map((place) => {
-                    console.log("Will render", props.placeData.length, "places");
-                    return <Place key={place.place_id} place_id={place.place_id} maps_place_id={place.maps_place_id} name={place.name} lat={place.lat} lon={place.lon} />;
-                })
-            } */}
-
         </div>
     );
 };

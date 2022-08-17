@@ -30,7 +30,6 @@ const authenticateUser = (username, password, cb) => {
 }
 
 const Login = (props) => {
-    console.log("Login rendering")
     const [username, setUsername] = useState("");
     const [password, setPassword] = useState("");
 
@@ -44,7 +43,7 @@ const Login = (props) => {
         setPassword(event.target.value)
     };
 
-    const handleFormSubmissionn = (event) => {
+    const handleFormSubmission = (event) => {
         event.preventDefault();
 
         console.log(username, password)
@@ -62,7 +61,7 @@ const Login = (props) => {
     return (
         <div className="login">
             <h3>Log In</h3>
-            <form onSubmit={handleFormSubmissionn}>
+            <form onSubmit={handleFormSubmission}>
                     <div className="log">
                         <input
                             name="username"

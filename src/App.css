@@ -22,8 +22,9 @@ h1 {
   font-family: 'Great Vibes', cursive;
   font-weight: normal;
   font-style: normal;
-  margin-bottom: 11vmax;
+  margin-bottom: 8vmax;
 }
+
 
 
 .App > main {
@@ -46,18 +47,23 @@ h1 {
 
 }
 
-.quote > p {
-  display: flex-box;
-  flex-direction: column-reverse;
+/* .App > .quote {
+  display: flex;
+} */
+
+.quote  p {
+  /* flex-direction: column-reverse; */
   margin-right: 17vmax;
   margin-left: 5vmax;
-  margin-top: 5vmax;
+  margin-top: 8vmax;
   font-family: 'Advent Pro', sans-serif;
   font-size: 3.8vmax;
   text-indent: 2vmax;
   /* margin-bottom: 100px; */
   font-weight: normal;
 }
+
+
 
 /* .authentication {
   margin-left: 10px;

@@ -48,13 +48,6 @@ const UserForm = (props) => {
                     value={userData.username}
                     onChange={handleFormInput}
                 />
-                {/* <input
-                    name="password"
-                    type="password"
-                    placeholder="Enter password"
-                    value={password}
-                    onChange={handlePasswordInput}
-                /> */}
                 <br/>
                 <br/>
                 <div className="signup-button">

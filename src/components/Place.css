@@ -23,7 +23,7 @@ h5 {
     line-height: 20px; */
 }
 h5 > button {
-    /* margin-left: 40px; */
+    /* margin-left: 10vmax; */
     /* font-size: 15px; */
     /* text-align: center; */
     font-size: 0.8vmax;
@@ -37,10 +37,8 @@ h5 > button {
     margin: 5px;
     margin-left: 2px;
     margin-right: 2px;
-    
-
     padding: 5px;
-    height: 20px;
+    /* height: 25px; */
     /* height: 20px; */
     /* line-height: 5px; */
     /* justify-content: center; */

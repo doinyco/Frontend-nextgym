@@ -7,11 +7,18 @@ const google = window.google;
 const seattleCenter = {lat: 47.6062, lng: -122.3321}
 
 const options = [
+    { label: 'Yoga', value: 'yoga' },
     { label: 'Gym', value: 'gym' },
     { label: 'Table tennis', value: 'table tennis' },
+    { label: 'Tennis', value: 'tennis' },
     { label: 'Fitness', value: 'fitness' },
     { label: 'Pilates', value: 'pilates' },
-    { label: 'Golf', value: 'golf' }
+    { label: 'Aerobics', value: 'aerobics' },
+    { label: 'Dance classes', value: 'dance classes' }
+    // { label: 'Golf', value: 'golf' },
+    // { label: 'Golf', value: 'golf' },
+    // { label: 'Golf', value: 'golf' }
+
 
 ];
 

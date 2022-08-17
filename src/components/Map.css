@@ -22,9 +22,10 @@
 }
 
 .search-menu {
-    margin-bottom: 10px;
-    margin-left: 23%;
-    font-size: 19px;
+    display: flex;
+    margin-bottom: 0.01vmax;
+    margin-left: 19vmax;
+    /* font-size: 19px; */
     border: none;
     background-color: white;
     /* font-size: 40px; */
@@ -81,8 +82,15 @@ h2 > img {
     width: 7vmax;
 } */
 
-img {
+.map > .map-nav img {
     width: 5vmax;
 }
 
+/* img:hover {
+    filter: drop-shadow(8px 8px 10px #d3d3d3); 
+} */
+
+.map-nav img:hover {
+    filter: drop-shadow(8px 8px 10px #8ab9f1); 
+}
 

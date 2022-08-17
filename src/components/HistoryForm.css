@@ -1,0 +1,76 @@
+.historyform {
+    display: flex;
+    flex-direction: row;
+
+}
+
+label {
+    /* font-size: 1vmax; */
+    display: inline;
+    font-weight: bold;
+    font-style: oblique;
+    padding: 2vmax;
+    margin: 2vmax;
+    color: #c0c0c0;
+    font-size: 1.2vmax;
+    font-family: 'Taviraj', serif;
+}
+
+/* .input {
+    width: 5vmax;
+    height: 2vmax;
+} */
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    width: 15vmax;
+    /* height: 15vmax;
+    line-height: 1.5vmax; */
+    /* margin-bottom: 1vmax; */
+    font-size: 2vmax;  
+}
+
+.inputs > input {
+    border: none;
+    line-height: 2vmax;
+    border-bottom: 0.008vmax solid #c0c0c0;
+    color: black;
+    font-size: 0.8vmax;
+    font-style: italic;
+    font-weight: lighter;
+    margin-left: 0.6vmax;
+    margin-right: 0.6vmax;
+}
+
+.historyform > input {
+    color: black;
+    font-size: 2vmax;
+}
+
+.input-form > label {
+    margin-left: 2vmax;
+    /* padding: 2vmax;
+    margin: 1vmax; */
+}
+
+
+.enter > input {
+    margin-left: 6vmax;
+    font-size: 1.1vmax;
+    font-weight: bold;
+    border: none;
+    font-style: italic;
+    /* color: #80daeb; */
+    color: #fd0e35;
+    background-color: white;
+}
+
+.enter > input:hover {
+    filter: brightness(150%);
+
+}
+
+
+
+

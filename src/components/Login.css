@@ -20,7 +20,7 @@
 
 
 .log > input {
-  display: inline-flex;
+  display: flex;
   background-color: #f8f8ff;
   /* background-color: #fffafa; */
   /* border-color:  #f8f8ff; */

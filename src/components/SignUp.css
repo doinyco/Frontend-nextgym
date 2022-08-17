@@ -46,11 +46,11 @@ form {
 .SIGNUP > h2 {
   color: black;
   display: inline-flex;
-  /* font-family: 'Great Vibes', cursive; */
-  font-family: 'Dancing Script', cursive;
+  font-family: 'Great Vibes', cursive;
+  /* font-family: 'Dancing Script', cursive; */
   font-style: normal;
-  /* text-decoration: underline; */
-  /* text-decoration-thickness: 0.07vmax; */
+  text-decoration: underline; 
+  text-decoration-thickness: 0.07vmax;
   margin-top: 3vmax;
   margin-left: 47vmax;
   font-weight: normal;
@@ -71,7 +71,7 @@ form {
   margin-top: 1vmax;
   margin-left: 1.8vmax;
   border: hidden;
-  border-bottom: 0.07vmax solid #48d1cc;
+  border-bottom: 0.05vmax solid #48d1cc;
 }
 
 .signup-s {
@@ -118,7 +118,7 @@ form {
 .signup-s > input {
   transition: all .5s ease;
   color: #40e0d0;
-  border: 0.13vmax solid #40e0d0;
+  border: 0.12vmax solid #40e0d0;
   font-family:'Montserrat', sans-serif;
   line-height: 0.4;
   font-size: 1.1vmax;
@@ -139,6 +139,9 @@ form {
   background-color: #40e0d0;
 }
 
+.signup-form > .home {
+  margin-right: 5vmax;
+}
 
 
 

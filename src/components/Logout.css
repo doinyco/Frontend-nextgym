@@ -1,26 +1,32 @@
-/* .logout {
-    border: 1px black;
-
-    float: left;
-
-}
-
-p {
-    float: left;
-} */
 
 
 .logout > button {
-    /* font-size: 30px; */
-    color: white;
-    font-size: 0.9vmax;
-    width: auto;
+
+}
+
+
+
+
+.logout > button {
+    display: inline;
+    transition: all .5s ease;
+    color: #00b7eb;
+    border: 2px solid #00b7eb;
+    font-family:'Montserrat', sans-serif;
+    line-height: 0.4;
+    font-size: 1vmax;
+    background-color : transparent;
+    padding: 0.8vmax;
+    outline: none;
+    border-radius: 0.7vmax;
     font-weight: bold;
-    position: static;
-    text-align: left;
-    
-    /* text-align: center; */
-    /* margin-right: 20px; */
-    /* justify-content: space-around; */
+    width: 5vmax;
+    margin: 0.9vmax;
+    margin-left: 80%;
+   
+}
+.logout > button:hover {
+    color: #ffffff;
+    background-color: #00b7eb;
 }
 
