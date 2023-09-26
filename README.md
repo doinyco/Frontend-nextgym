@@ -43,8 +43,9 @@ To get started with this project, follow these steps:
   
 7. Start the development server:
    
-  ```bash
+  ```shell
   npm start
+  ```
   
 5. Open your browser and visit http://localhost:3000 to view the application.
 
