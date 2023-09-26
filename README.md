@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# My Next Gym Frontend Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the My Next Gym frontend application repository! This application helps users find the right gym easily. It includes user authentication, user profiles, a map view, and the ability to save favorite places and track workout histories.
 
-## Available Scripts
+## Demo
 
-In the project directory, you can run:
+Check out a live demo of the application [here](https://www.youtube.com/watch?v=VFmsh5oNHYA&t=2s).
 
-### `npm start`
+## Backend Repository
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The backend code for this project can be found in [this GitHub repository](https://github.com/doinyco/Backend-next-gym).
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Table of Contents
 
-### `npm test`
+- [Technologies Used](#technologies-used)
+- [Getting Started](#getting-started)
+- [Usage](#usage)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- [React](https://reactjs.org/)
+- [React Router](https://reactrouter.com/)
+- [Axios](https://axios-http.com/)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Getting Started
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+To get started with this project, follow these steps:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+1. Clone this repository to your local machine:
+   ```bash
+   git clone https://github.com/your-username/my-next-gym-frontend.git
 
-### `npm run eject`
+2. Navigate to the project directory:
+   ```shell
+   cd my-next-gym-frontend
+   ```
+3. Install the necessary dependencies:
+   ```shell
+   npm install
+  ```
+4. Start the development server:
+  ```shell
+  npm start
+  ```
+5. Open your browser and visit http://localhost:3000 to view the application.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Usage
+- The main application component can be found in App.js, which includes the homepage layout and user authentication components.
+- User profiles, including saved places and workout histories, are managed in the User.js component.
+- API calls to retrieve and manipulate data are located in the backendAPI.js file.
+- Additional components include:
+  - `Auth.js`: Manages user authentication.
+  - `EditUserForm.js`: Handles editing user profile data.
+  - `Histories.js`: Displays a list of workout histories.
+  - `History.js`: Displays individual workout history details.
+  - `HistoryForm.js`: Provides a form for users to add workout history entries.
+  - `Login.js`: Manages user login functionality.
+  - `Logout.js`: Handles user logout.
+  - `Map.js`: Displays a map view of gym locations and user interactions.
+  - `Place.js`: Represents individual gym locations with the option to save or remove as a favorite.
+  - `PlaceList.js`: Lists saved gym locations.
+  - `SearchMenu.js`: Provides search functionality to find gym locations based on user preferences.
+  - `CreateProfile.js`: Allows users to create a profile with a username and password.
