@@ -27,21 +27,25 @@ The backend code for this project can be found in [this GitHub repository](https
 To get started with this project, follow these steps:
 
 1. Clone this repository to your local machine:
+   
    ```bash
    git clone https://github.com/your-username/my-next-gym-frontend.git
 
-2. Navigate to the project directory:
-   ```shell
+3. Navigate to the project directory:
+   
+   ```bash
    cd my-next-gym-frontend
-   ```
-3. Install the necessary dependencies:
-   ```shell
+   
+5. Install the necessary dependencies:
+   
+   ```bash
    npm install
-  ```
-4. Start the development server:
-  ```shell
+  
+7. Start the development server:
+   
+  ```bash
   npm start
-  ```
+  
 5. Open your browser and visit http://localhost:3000 to view the application.
 
 ## Usage
